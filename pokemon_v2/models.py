@@ -1496,7 +1496,8 @@ class Machine(HasGrowthRate, HasItem):
         VersionGroup, blank=True, null=True, on_delete=models.CASCADE
     )
 
-    move = models.ForeignKey(Move, blank=True, null=True, on_delete=models.CASCADE)
+    move = models.ForeignKey(
+        Move, blank=True, null=True, on_delete=models.CASCADE)
 
 
 #######################
